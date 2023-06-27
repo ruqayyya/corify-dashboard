@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+// Router
+import { Routes, Route } from "react-router-dom";
+import ProtectedRouter from "./router/ProtectedRouter";
 
-function App() {
+// Context
+import { MainContext } from "./utils/Context";
+import { Auth } from "./utils/AuthContext";
+
+// Pages
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import NotFound from "./pages/NotFound";
+
+// Components
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import AllCars from "./pages/AllCars";
+import CreateCar from "./pages/CreateCar";
+import EditCar from "./pages/EditCar";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Auth>
+      <MainContext>
+        <Header />
+        <Routes>
+          <Route element={<ProtectedRouter />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/all-cars" element={<AllCars />} />
+            <Route path="/create-car" element={<CreateCar />} />
+            <Route path="/edit-car/:carID" element={<EditCar />} />
+          </Route>
+          <Route path="/login" element={<Login />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </MainContext>
+    </Auth>
   );
-}
+};
 
 export default App;
