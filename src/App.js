@@ -1,10 +1,5 @@
 // Router
 import { Routes, Route } from "react-router-dom";
-import ProtectedRouter from "./router/ProtectedRouter";
-
-// Context
-import { MainContext } from "./utils/Context";
-import { Auth } from "./utils/AuthContext";
 
 // Pages
 import Home from "./pages/Home";
@@ -20,22 +15,18 @@ import EditCar from "./pages/EditCar";
 
 const App = () => {
   return (
-    <Auth>
-      <MainContext>
-        <Header />
-        <Routes>
-          <Route element={<ProtectedRouter />}>
-            <Route path="/" element={<Home />} />
-            <Route path="/all-cars" element={<AllCars />} />
-            <Route path="/create-car" element={<CreateCar />} />
-            <Route path="/edit-car/:carID" element={<EditCar />} />
-          </Route>
-          <Route path="/login" element={<Login />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <Footer />
-      </MainContext>
-    </Auth>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/all-cars" element={<AllCars />} />
+        <Route path="/create-car" element={<CreateCar />} />
+        <Route path="/edit-car" element={<EditCar />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <Footer />
+    </>
   );
 };
 

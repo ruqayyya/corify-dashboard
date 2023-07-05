@@ -1,9 +1,4 @@
-import { useState } from "react";
-
 const CreateCar = () => {
-  // Local states
-  const [preview, setPreview] = useState("");
-
   return (
     <section className="createCar">
       <div className="container">
@@ -12,9 +7,14 @@ const CreateCar = () => {
           <div className="login-box">
             <form>
               <div className="user-box">
-                <input type="text" name="name" />
+                <input
+                  // className={errors.name && "error"}
+                  type="text"
+                  name="name"
+                />
                 <label>Car Name</label>
               </div>
+              {/* {errors.name && <span>{errors.name.message}</span>} */}
               <div className="user-box">
                 <input type="text" name="details" />
                 <label>Car Details</label>
@@ -24,13 +24,10 @@ const CreateCar = () => {
                 <label>Car Price</label>
               </div>
               <div className="user-box">
-                {preview ? (
-                  <div className="previewImage">
-                    <img src={preview} alt="uploaded-img" />
-                  </div>
-                ) : (
-                  <input type="file" name="productImage" id="cImg" />
-                )}
+                <input type="file" name="productImage" id="cImg" />
+                {/* <div className="previewImage">
+                  <img src={preview} alt="uploaded-img" />
+                </div> */}
               </div>
               <div className="btn">
                 <button>
@@ -47,17 +44,3 @@ const CreateCar = () => {
 };
 
 export default CreateCar;
-
-/*
-  const base64 = (e) => {
-    let file = e.target.files[0];
-    let reader = new FileReader();
-    reader.readAsDataURL(file);
-    reader.onload = function () {
-      setPreview(reader.result);
-    };
-    reader.onerror = function (error) {
-      console.log(error);
-    };
-  };
-*/

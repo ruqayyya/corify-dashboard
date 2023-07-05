@@ -1,9 +1,4 @@
-import { useState } from "react";
-
 const EditCar = () => {
-  // Local states
-  const [preview, setPreview] = useState("");
-
   return (
     <section className="editCar">
       <div className="container">
@@ -25,11 +20,12 @@ const EditCar = () => {
               </div>
               <div className="user-box">
                 <input type="file" name="productImage" id="cImg" />
-                {preview && (
-                  <div className="previewImage">
-                    <img src={preview} alt="uploaded-img" />
-                  </div>
-                )}
+                {/* <div className="previewImage">
+                    <img src={preview} alt="old-img" />
+                  </div> */}
+                <div className="previewImage">
+                  <img src="" alt="new-img" />
+                </div>
               </div>
               <div className="btn">
                 <button>
@@ -46,17 +42,3 @@ const EditCar = () => {
 };
 
 export default EditCar;
-
-/*
-  const base64 = (e) => {
-    let file = e.target.files[0];
-    let reader = new FileReader();
-    reader.readAsDataURL(file);
-    reader.onload = function () {
-      setPreview(reader.result);
-    };
-    reader.onerror = function (error) {
-      console.log(error);
-    };
-  };
-*/
