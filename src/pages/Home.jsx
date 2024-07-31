@@ -3,7 +3,7 @@ const Home = () => {
     <section className="home">
       <div className="container">
         <div className="row">
-          <h1 className="homeTitle">Welcome Corify Dashboard</h1>
+          <h1 className="homeTitle">Welcome Alienation Shop</h1>
         </div>
       </div>
     </section>

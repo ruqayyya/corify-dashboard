@@ -31,10 +31,10 @@
             cursor: pointer;
             a {
               &:hover {
-                color: #ce8339;
+                color: rgb(119,255,0)ı
               }
               &.active {
-                color: #ce8339;
+                color: rgb(119,255,0);
               }
             }
           }
@@ -54,7 +54,7 @@
             position: absolute;
             top: -10px;
             right: -10px;
-            background-color: #ce8339;
+            background-color: rgb(119,255,0);
             color: #fff;
             width: 20px;
             height: 20px;
@@ -67,7 +67,7 @@
           &:hover {
             svg {
               path {
-                color: #ce8339;
+                color: rgb(119,255,0);
               }
             }
           }
@@ -81,11 +81,11 @@
           &:hover {
             svg {
               path {
-                color: #ce8339;
+                color: rgb(119,255,0);
               }
             }
             span {
-              color: #ce8339;
+              color: rgb(119,255,0);
             }
           }
         }
@@ -100,10 +100,10 @@
           font-size: 18px;
           cursor: pointer;
           &:hover {
-            color: #ce8339;
+            color: rgb(119,255,0);
             svg {
               path {
-                color: #ce8339;
+                color: rgb(119,255,0);
               }
             }
           }
@@ -138,7 +138,7 @@
         path {
           cursor: pointer;
           &:hover {
-            color: #ce8339;
+            color: rgb(119,255,0);
           }
         }
       }
@@ -163,7 +163,7 @@
         justify-content: flex-start;
         align-items: center;
         gap: 16px;
-        border-bottom: 1px solid #ce8339;
+        border-bottom: 1px solid rgb(119,255,0);
         .carImg {
           width: 100px;
           height: 50px;
@@ -175,7 +175,7 @@
         }
         .carInfo {
           p {
-            color: #ce8339;
+            color: rgb(119,255,0);
             margin-bottom: 5px;
             font-weight: 700;
           }
@@ -184,15 +184,15 @@
       gap: 16px;
       a {
         display: inline-block;
-        background-color: #ce8339;
+        background-color: rgb(119,255,0);
         color: #fff;
         padding: 8px 12px;
         border-radius: 15px;
         border: 1px solid transparent;
         &:hover {
           background-color: #202424;
-          border-color: #ce8339;
-          color: #ce8339;
+          border-color: rgb(119,255,0);
+          color: rgb(119,255,0);
         }
       }
     }

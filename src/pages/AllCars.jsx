@@ -10,23 +10,23 @@ const AllCars = () => {
       {/* {loading && <Loader />} */}
       <div className="container">
         <div className="row">
-          <h2 className="title">All Cars List</h2>
+          <h2 className="title">All product List</h2>
           <table className="table">
             <thead>
               <tr>
                 <th>No</th>
-                <th>Car Image</th>
-                <th>Car Name</th>
-                <th>Car Details</th>
-                <th>Car Price</th>
-                <th>Edit Car</th>
+                <th>Product Image</th>
+                <th>Product Name</th>
+                <th>Product Details</th>
+                <th>Product Price</th>
+                <th>Edit Product</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>1</td>
                 <td className="carImg">
-                  <img src="" alt="carImg" />
+                  <img src="" alt="productimage" />
                 </td>
                 <td>Name</td>
                 <td>Details</td>

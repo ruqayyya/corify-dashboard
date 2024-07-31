@@ -12,10 +12,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="row">
-          <p className="copyright">
-            Corify Made by <span>Tarlan Alijanov</span> ©{" "}
-            {new Date().getFullYear()}
-          </p>
+          <p className="copyright">©Aliantion {new Date().getFullYear()}</p>
           <ul className="socialList">
             <li className="socialItem">Follow us</li>
             <li className="socialItem">

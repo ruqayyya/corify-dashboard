@@ -2,7 +2,7 @@
 import { Link, NavLink } from "react-router-dom";
 
 // Images
-import logo from "../assets/images/logo.webp";
+import logo from "../assets/images/alienaNewWeb_185x.png";
 
 // Icons
 import { FaUserCircle, FaSignOutAlt } from "react-icons/fa";
@@ -23,10 +23,10 @@ const Header = () => {
                 <NavLink to="/">Home</NavLink>
               </li>
               <li className="navItem">
-                <NavLink to="/all-cars">All Cars</NavLink>
+                <NavLink to="/all-cars">All Product</NavLink>
               </li>
               <li className="navItem">
-                <NavLink to="/create-car">Add new car</NavLink>
+                <NavLink to="/create-car">Add new product</NavLink>
               </li>
             </ul>
           </nav>

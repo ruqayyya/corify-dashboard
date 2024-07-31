@@ -8,15 +8,15 @@ const EditCar = () => {
             <form>
               <div className="user-box">
                 <input type="text" name="name" />
-                <label>Car Name</label>
+                <label>Product Name</label>
               </div>
               <div className="user-box">
                 <input type="text" name="details" />
-                <label>Car Details</label>
+                <label>Product Details</label>
               </div>
               <div className="user-box">
                 <input type="text" name="price" />
-                <label>Car Price</label>
+                <label>Product Price</label>
               </div>
               <div className="user-box">
                 <input type="file" name="productImage" id="cImg" />
@@ -29,7 +29,7 @@ const EditCar = () => {
               </div>
               <div className="btn">
                 <button>
-                  Edit car
+                  Edit product
                   <span></span>
                 </button>
               </div>

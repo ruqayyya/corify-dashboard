@@ -12,16 +12,16 @@ const CreateCar = () => {
                   type="text"
                   name="name"
                 />
-                <label>Car Name</label>
+                <label>Product Name</label>
               </div>
               {/* {errors.name && <span>{errors.name.message}</span>} */}
               <div className="user-box">
                 <input type="text" name="details" />
-                <label>Car Details</label>
+                <label>Product Details</label>
               </div>
               <div className="user-box">
                 <input type="text" name="price" />
-                <label>Car Price</label>
+                <label>Product Price</label>
               </div>
               <div className="user-box">
                 <input type="file" name="productImage" id="cImg" />
@@ -31,7 +31,7 @@ const CreateCar = () => {
               </div>
               <div className="btn">
                 <button>
-                  Create Car
+                  Create Product
                   <span></span>
                 </button>
               </div>
