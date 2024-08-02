@@ -31,17 +31,6 @@ const Footer = () => {
               <FaYoutube />
             </li>
           </ul>
-          <div className="inps">
-            <select name="language" className="language">
-              <option value="en">English</option>
-              <option value="az">Azərbaycanca</option>
-              <option value="tr">Türkçe</option>
-            </select>
-            <label className="switch">
-              <input type="checkbox" />
-              <span className="slider"></span>
-            </label>
-          </div>
         </div>
       </div>
     </footer>

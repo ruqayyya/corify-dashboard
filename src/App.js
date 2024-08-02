@@ -9,9 +9,9 @@ import NotFound from "./pages/NotFound";
 // Components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import AllCars from "./pages/AllCars";
-import CreateCar from "./pages/CreateCar";
-import EditCar from "./pages/EditCar";
+import AllCars from "./pages/AllProducts";
+import CreateProduct from "./pages/CreateProduct";
+import EditProduct from "./pages/EditProduct";
 
 const App = () => {
   return (
@@ -19,9 +19,9 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/all-cars" element={<AllCars />} />
-        <Route path="/create-car" element={<CreateCar />} />
-        <Route path="/edit-car" element={<EditCar />} />
+        <Route path="/all-products" element={<AllCars />} />
+        <Route path="/create-product" element={<CreateProduct />} />
+        <Route path="/edit-product/:productId" element={<EditProduct />} />
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
